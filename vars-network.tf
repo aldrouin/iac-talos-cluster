@@ -7,13 +7,13 @@ variable "network_ip_prefix" {
 variable "network_cidr" {
   description = "Network address in CIDR notation"
   type        = string
-  default     = "10.0.0.1/24"
+  default     = "172.16.2.1/24"
 }
 
 variable "network_gateway" {
   description = "Gateway of the network"
   type        = string
-  default     = "10.0.0.1"
+  default     = "172.16.2.1"
 }
 
 variable "router_ip" {

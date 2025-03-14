@@ -52,35 +52,35 @@ variable "worker_node_first_id" {
 variable "control_plane_cpu_cores" {
   description = "The default amount of CPU cores to give the control plane nodes"
   type        = number
-  default     = 2
+  default     = 4
 }
 
 variable "worker_node_cpu_cores" {
   description = "The default amount of CPU cores to give the worker nodes"
   type        = number
-  default     = 4
+  default     = 8
 }
 
 variable "control_plane_memory" {
   description = "The default amount of memory (GiB) to give the control plane nodes"
   type        = number
-  default     = 4
+  default     = 16
 }
 
 variable "worker_node_memory" {
   description = "The default amount of memory (GiB) to give the worker nodes"
   type        = number
-  default     = 16
+  default     = 32
 }
 
 variable "control_plane_disk_size" {
   description = "The size of the boot disk (GiB) to give the control plane nodes"
   type        = number
-  default     = 8
+  default     = 30
 }
 
 variable "worker_node_disk_size" {
   description = "The default size of the boot disk (GiB) to give the worker nodes"
   type        = number
-  default     = 16
+  default     = 30
 }
