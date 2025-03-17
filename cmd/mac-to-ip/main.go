@@ -13,7 +13,7 @@ import (
 )
 
 func main() {
-	subnet := "10.0.0.1/24"
+	subnet := "172.16.2.0/24"
 
 	fs := flag.NewFlagSet(os.Args[0], flag.ExitOnError)
 	fs.StringVar(&subnet, "subnet", subnet, "subnet(s) (cidr) to scan (comma separated list)")
