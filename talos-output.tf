@@ -1,4 +1,4 @@
-data "talos_cluster_kubeconfig" "this" {
+data "talos_cluster_kubeconfig" {
   depends_on = [talos_machine_bootstrap.this]
 
   client_configuration = data.talos_client_configuration.this.client_configuration
